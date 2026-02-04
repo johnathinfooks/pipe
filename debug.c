@@ -17,7 +17,6 @@ static int simpleInstruction(const char* name, int offset)
     return offset + 1;
 }
 
-
 int disassembleInstruction(Chunk *chunk, int offset)
 {
     printf("%04d ", offset);
