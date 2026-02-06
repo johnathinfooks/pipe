@@ -1,5 +1,5 @@
-#ifndef CLOX_CHUNK_H
-#define CLOX_CHUNK_H
+#ifndef PIPE_CHUNK_H
+#define PIPE_CHUNK_H
 
 #include "common.h"
 
@@ -17,4 +17,4 @@ void initChunk(Chunk* chunk);
 void writeChunk(Chunk* chunk, uint8_t byte);
 void freeChunk(Chunk* chunk);
 
-#endif // CLOX_CHUNK_H
+#endif // PIPE_CHUNK_H

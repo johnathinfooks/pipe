@@ -11,5 +11,5 @@ int main(int argc, const char* argv[])
     disassembleChunk(&chunk, "test");
     freeChunk(&chunk);
 
-        return 0;
+    return 0;
 }
