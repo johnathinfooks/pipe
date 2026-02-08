@@ -8,12 +8,9 @@ int main(int argc, const char* argv[])
 
     initChunk(&chunk);
 
-    for (int i = 2; i < 20; i++) {
-        writeChunk(&chunk, OP_CONSTANT);
-        writeChunk(&chunk, addConstantPool(&chunk, i * i));
-    }
-
-    writeChunk(&chunk, OP_RETURN);
+    writeChunk(&chunk, OP_CONSTANT, 25);
+    writeChunk(&chunk, addConstantPool(&chunk, 23), 25);
+        writeChunk(&chunk, OP_RETURN, 25);
     disassembleChunk(&chunk, "test");
     freeChunk(&chunk);
 
