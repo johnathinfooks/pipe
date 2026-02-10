@@ -15,8 +15,19 @@ typedef enum {
     INTERPRET_RUNTIME_ERROR
 } InterpretResult;
 
+/**
+ * @breif Initiate virtual machine.
+ */
 void initVM();
+/**
+ * @breif Close virtual machine.
+ */
 void freeVM();
+
+/**
+ * @breif Interprets chunk through virutal machine.
+ * @param chunk Chunk to be interpreted.
+*/
 InterpretResult interpret(Chunk* chunk);
 
 #endif // PIPE_VM_H

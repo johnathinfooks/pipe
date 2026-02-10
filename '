@@ -13,9 +13,8 @@ int main(int argc, const char* argv[])
 
 
 
-    int x = addConstantPool(&chunk, 23);
     writeChunk(&chunk, OP_CONSTANT, 25);
-    writeChunk(&chunk, x, 25);
+    writeChunk(&chunk, addConstantPool(&chunk, 23), 25);
     writeChunk(&chunk, OP_RETURN, 25);
 
     interpret(&chunk);
