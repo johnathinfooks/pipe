@@ -18,6 +18,10 @@ static int constantInstruction(const char* name, Chunk* chunk, int offset)
     printValue(chunk->constants.values[constant]);
     printf("'\n");
 
+    // if you wanna see constant on stack without index
+    // printf("%-16s", name);
+    // printf("\n");
+
     return offset + 2;
 }
 

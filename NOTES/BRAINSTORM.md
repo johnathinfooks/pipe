@@ -64,4 +64,17 @@ foo([1,2,3]) =
     end
 end
 
+foo([1,2,3]) =
+    for (i in IN) do
+        if (x > 1) then OUT = True
+        else OUT = False end
+    end
+end
 
+
+
+# consider
+consider like the general input/output like multiple outputs possible with OUT[n] keyword; like multiple dimentional output is a part
+of the language rather than having to understand the nesting that you usually have to.
+
+i do not really want to do the :: syntax for type specification because i do want there to be class capability with that syntax

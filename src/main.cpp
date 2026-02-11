@@ -21,8 +21,8 @@ int main(int argc, const char* argv[])
     writeChunk(&chunk, y, lineNum);
     writeChunk(&chunk, OP_RETURN, lineNum);
 
+    // TODO: documentation for this would be helpful
     interpret(&chunk);
-    disassembleChunk(&chunk, "testcase");
 
 
 

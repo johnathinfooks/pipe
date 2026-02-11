@@ -4,3 +4,5 @@
 - FIX   : Fixed something that was broken.
 - CLEAN : Small refactor; almost unnoticable.
 - START : Started something but did not finish. Look for TODO:
+
+- NEXT  : Reference for what to do next or where to start work session.
