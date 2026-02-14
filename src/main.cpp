@@ -12,9 +12,18 @@ int main(int argc, const char* argv[])
 
     initVM();
 
+    int lineNum = 12;
+    int x = addConstantPool(&chunk, 256.25);
+    int y = addConstantPool(&chunk, 34.2);
+    writeChunk(&chunk, OP_CONSTANT, lineNum);
+    writeChunk(&chunk, x, lineNum);
+    writeChunk(&chunk, OP_CONSTANT, lineNum);
+    writeChunk(&chunk, y, lineNum);
+    writeChunk(&chunk, OP_NEGATE, lineNum);
+    writeChunk(&chunk, OP_RETURN, lineNum);
 
 
-    // TODO: documentation for this would be helpful
+
     interpret(&chunk);
 
 
